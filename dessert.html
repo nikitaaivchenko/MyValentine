@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dessert</title>
+    <link rel="stylesheet" href="css/dessert.css" />
+  </head>
+  <body>
+    <div id="dessertquestion">Який десерт обираєш?</div>
+
+    <div class="dessert-selection">
+      <div class="dessert-item">
+        <img src="food/ecler.jpg" alt="ecler" />
+        <label
+        ><input type="checkbox" name="dessert" value="Еклер" onchange="checkCheckbox('dessertsBtn')" /> Еклер</label
+        >
+      </div>
+      <div class="dessert-item">
+        <img src="food/boba.jpeg" alt="boba" />
+        <label
+          ><input type="checkbox" name="dessert" value="Боба" onchange="checkCheckbox('dessertsBtn')" /> Боба</label
+        >
+      </div>
+      <div class="dessert-item">
+        <img src="food/choux.jpg" alt="choux" />
+        <label
+          ><input type="checkbox" name="dessert" value="Шу" onchange="checkCheckbox('dessertsBtn')" /> Шу</label
+        >
+      </div>
+      <div class="dessert-item">
+        <img src="food/motiko.jpg" alt="motiko" />
+        <label
+          ><input type="checkbox" name="dessert" value="Мотіко" onchange="checkCheckbox('dessertsBtn')" /> Мотіко</label
+        >
+      </div>
+      <div class="dessert-item">
+        <img src="food/macaroons.jpeg" alt="macaroons" />
+        <label
+        ><input type="checkbox" name="dessert" value="Макаруни" onchange="checkCheckbox('dessertsBtn')" /> Макаруни</label
+        >
+      </div>
+      <div class="dessert-item">
+        <img src="food/croissant.jpg" alt="croissant" />
+        <label
+        ><input type="checkbox" name="dessert" value="Круасан" onchange="checkCheckbox('dessertsBtn')" /> Круасан</label
+        >
+      </div>
+    </div>
+    <button class="button" onclick="handleButtonClick('activities.html')" id="dessertsBtn" disabled>
+      Продовжити &#x2661;
+    </button>
+  </body>
+  <script src="index.js"></script>
+</html>

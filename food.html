@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Selection</title>
+    <link rel="stylesheet" href="css/food.css" />
+  </head>
+  <body>
+    <div id="foodquestion">
+      <b>Що б ти хотіла поїсти?</b>
+    </div>
+
+    <div class="food-selection">
+      <div class="food-item">
+        <img src="food/mcdonalds.jpg" alt="Burgers, fries and fried chicken" />
+        <label
+          ><input
+            type="checkbox"
+            name="food"
+            value="McDonalds"
+            onchange="checkCheckbox('foodBtn')"
+          />
+          McDonalds</label
+        >
+      </div>
+      <div class="food-item">
+        <img src="food/pasta.jpeg" alt="pasta" />
+        <label><input type="checkbox" name="food" value="Garlic" onchange="checkCheckbox('foodBtn')" /> Garlic</label>
+      </div>
+      <div class="food-item">
+        <img src="food/pizza.jpeg" alt="pizza" />
+        <label><input type="checkbox" name="food" value="Піцца" onchange="checkCheckbox('foodBtn')" /> Піцца</label>
+      </div>
+      <div class="food-item">
+        <img src="food/shaurma.jpeg" alt="shaurma" />
+        <label><input type="checkbox" name="food" value="Accapulco" onchange="checkCheckbox('foodBtn')" /> Accapulco</label>
+      </div>
+      <div class="food-item">
+        <img src="food/sushi.jpeg" alt="sushi" />
+        <label><input type="checkbox" name="food" value="Sumeshi" onchange="checkCheckbox('foodBtn')" /> Sumeshi</label>
+      </div>
+    </div>
+    <button class="button" onclick="handleButtonClick('dessert.html')" id="foodBtn" disabled>
+      Продовжити &#x2661;
+    </button>
+  </body>
+  <script src="index.js"></script>
+</html>

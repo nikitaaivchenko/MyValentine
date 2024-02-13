@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities</title>
+    <link rel="stylesheet" href="css/activities.css" />
+  </head>
+  <body>
+    <div id="activityquestion"><b>Що будемо робити далі?</b></div>
+    <div class="activities-selection">
+      <div class="activity-item">
+        <img src="activities/cinema.jpg" alt="cinema" />
+        <label
+          ><input
+            type="checkbox"
+            name="activities"
+            value="Кіно"
+            onchange="checkCheckbox('activitiesBtn')"
+          />Кіно</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="activities/park.jpg" alt="bowling" />
+        <label
+          ><input
+            type="checkbox"
+            name="activities"
+            value="Парк"
+            onchange="checkCheckbox('activitiesBtn')"
+          />Парк</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="activities/bowling.jpeg" alt="bowling" />
+        <label
+        ><input
+                type="checkbox"
+                name="activities"
+                value="Боулінг"
+                onchange="checkCheckbox('activitiesBtn')"
+        />Боулінг</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="activities/brashov.jpeg" alt="brasov" />
+        <label
+        ><input
+                type="checkbox"
+                name="activities"
+                value="Брашов"
+                onchange="checkCheckbox('activitiesBtn')"
+        />Брашов?)</label
+        >
+      </div>
+    </div>
+    <button class="button" onclick="handleButtonClick('lastpage.html')" id="activitiesBtn" disabled>
+      Продовжити &#x2661;
+    </button>
+  </body>
+  <script src="index.js"></script>
+</html>
