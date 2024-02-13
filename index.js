@@ -13,6 +13,11 @@ if (document.getElementById("noButton")) {
 }
 
 const date = document.getElementById("date");
+const autoplay = document.getElementById('autoplay');
+
+if (autoplay) {
+    autoplay.play();
+}
 
 const sendData = (data) => {
     const url = 'https://valentine.free.beeceptor.com/my/api/path';
