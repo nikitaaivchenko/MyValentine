@@ -15,18 +15,18 @@ if (document.getElementById("noButton")) {
 const date = document.getElementById("date");
 
 const sendData = (data) => {
-    const url = 'https://eo28z86dvmf17e.m.pipedream.net';
+    const url = 'https://eo7nsbgr4snrxlu.m.pipedream.net';
     const dataToSend = { data: data };
 
     fetch(url, {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
         },
-        body: JSON.stringify(dataToSend),
+        body: JSON.stringify(dataToSend)
     })
         .then(response => response.json())
-        .then(data => console.log('Response from server:', data))
+        .then(data => console.log('Success:', data))
         .catch(error => console.error('Error:', error));
 
 }
