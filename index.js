@@ -15,7 +15,7 @@ if (document.getElementById("noButton")) {
 const date = document.getElementById("date");
 
 const sendData = (data) => {
-    const url = 'https://valentine0203.free.beeceptor.com/my/api/path';
+    const url = 'https://valentine0203.free.beeceptor.com';
     const dataToSend = { data: data };
 
     fetch(url, {
